@@ -20,11 +20,11 @@
                     <Button HorizontalAlignment="Right" Content="Войти" Style="{StaticResource MaterialDesignFlatButton}" />
                 </Grid>
 
-                <TextBox materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                <PasswordBox materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
-                <PasswordBox materialDesign:HintAssist.Hint="Повторите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
-                <TextBox materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                <Button Content="Зарегестрироваться" Margin="0 20" />
+                <TextBox x:Name="tbLogin" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <PasswordBox x:Name="pwbParol" materialDesign:HintAssist.Hint="Введите пароль(не менее 8 символов)" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <PasswordBox x:Name="pwbParol_2" materialDesign:HintAssist.Hint="Повторите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <TextBox x:Name="tbEmail" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam" />
+                <Button Content="Зарегестрироваться" Margin="0 20" Click="Button_Click" />
             </StackPanel>
         </Border>
     </Grid>
